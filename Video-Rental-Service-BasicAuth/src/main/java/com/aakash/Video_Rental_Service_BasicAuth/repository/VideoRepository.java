@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.aakash.Video_Rental_Service_BasicAuth.model.Video;
 
 public interface VideoRepository extends JpaRepository<Video, Long> {
-    @SuppressWarnings({ "rawtypes", "unchecked" })
+    @SuppressWarnings({ "rawtypes", "unchecked", "null" })
     Optional findById(Long id);
 }
