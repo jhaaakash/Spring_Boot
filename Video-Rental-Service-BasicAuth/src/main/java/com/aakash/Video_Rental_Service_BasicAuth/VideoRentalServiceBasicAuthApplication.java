@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class VideoRentalServiceBasicAuthApplication {
-
+	
 	public static void main(String[] args) {
 		SpringApplication.run(VideoRentalServiceBasicAuthApplication.class, args);
 	}

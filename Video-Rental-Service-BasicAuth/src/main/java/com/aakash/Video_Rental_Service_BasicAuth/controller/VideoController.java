@@ -40,6 +40,7 @@ public class VideoController {
         if (!videoRepository.existsById(id)) {
             return new ResponseEntity<>("Video not found", HttpStatus.NOT_FOUND);
         }
+        
         video.setId(id);
         videoRepository.save(video);
         return new ResponseEntity<>("Video updated successfully", HttpStatus.OK);
